@@ -47,7 +47,7 @@ python clr_ctrl.py
 
 python train.py   --model_config config/model_config_small.json   --tokenized_data_path data/tokenized/   --tokenizer_path cache/vocab_small.txt   --raw_data_path data/train.json   --epochs 15   --log_step 200   --stride 512   --output_dir model/   --device 0,1   --num_pieces 100   --raw
 
-在这个过程中，我们可以看到命令窗口打印出模型的config文件，定义了模型的结构；同时也打印出了模型的参数量，为81894144，约82M
+在这个过程中，我们可以看到命令窗口打印出模型的config文件，定义了模型的结构；同时也打印出了模型的参数量
 
 Print Model config config: { "attn_pdrop": 0.1, "embd_pdrop": 0.1, "finetuning_task": null, "initializer_range": 0.02, "layer_norm_epsilon": 1e-05, "n_ctx": 1024, "n_embd": 768, "n_head": 12, "n_layer": 10, "n_positions": 1024, "num_labels": 1, "output_attentions": false, "output_hidden_states": false, "output_past": true, "pruned_heads": {}, "resid_pdrop": 0.1, "summary_activation": null, "summary_first_dropout": 0.1, "summary_proj_to_labels": true, "summary_type": "cls_index", "summary_use_proj": true, "torchscript": false, "use_bfloat16": false, "vocab_size": 13317 } number of parameters: 81894144
 
